@@ -61,11 +61,11 @@ class _TriviaControlsState extends State<TriviaControls> {
 
   void addConcrete() {
     controller.clear();
-    context.read<NumberTriviaBloc>().add(GetTriviaForConcreteNumber(inputStr));
+    context.read<NumberTriviaBloc>().getTriviaForConcreteNumber(inputStr);
   }
 
   void addRandom() {
     controller.clear();
-    context.read<NumberTriviaBloc>().add(GetTriviaForRandomNumber());
+    context.read<NumberTriviaBloc>().getTriviaForRandomNumber();
   }
 }
